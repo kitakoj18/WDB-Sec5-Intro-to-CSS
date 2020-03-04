@@ -1,0 +1,40 @@
+/*THIS CSS DOES NOT HAVE CORRESPONDING HTML*/
+
+/*Star - selects every element on the page*/
+* {
+	border: 1px solid lightgrey;
+}
+
+/*Descendant Selector - takes two or more selectors and chain them together*/
+/*e.g. selects every a tag inside an li tag*/
+li a {
+	color: red;
+}
+
+/*e.g. selects every tag with .completed class inside li tag*/
+li .completed {
+	color: red;
+}
+
+/*Adjacent Selector - select element that comes AFTER another element i.e. "sibling" of a tag on the same level (same line vertically, not indented) */
+/*e.g. selects ul adjacent/after h4 tag*/
+h4 + ul {
+	border: 4px solid red;
+}
+
+/* Attribute Selector - way to select elements based off of any attribute*/
+/* e.g. selects all anchor tag with href="https://www.google.com" */
+a[href="http://www.google.com"] {
+	background: blue;
+}
+
+/*e.g. selects all input elements where type="text"*/
+input[type="text"]{
+	background: blue;
+}
+
+/*nth of type - takes number and selects every nth of an element e.g. select every 5th div tag*/
+/*e.g. select every 3rd ul tag and change background to purple*/
+ul:nth_of_type(3){
+	background: purple;
+}

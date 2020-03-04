@@ -1,0 +1,16 @@
+li {
+	border: 2px solid red;
+}
+
+/* style specifically the list element with id="thirdCheck"; 
+for id selector, will refer to id name with # */
+#thirdCheck {
+	background: yellow;
+}
+
+/* style the list elements with class="completed"
+for class selector, will refer to class name with . */
+.completed {
+	/* text formatting */
+	text-decoration: line-through;
+}

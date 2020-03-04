@@ -1,0 +1,29 @@
+body{
+
+	/*add image to background: notice different attributes to play around with
+	background:	url(https://images.unsplash.com/photo-1506689205310-0a29c388691c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+
+	background: pink;
+}
+
+h1 {
+	color: red;
+	background:	blue;
+	/*Need to have color, width, and style for border to appear*/
+	border-color: purple;
+	border-width: 5px;
+	border-style: solid; 
+
+	/*shortcut for above will do the same thing*/
+	/*border: 5px solid purple;*/
+}
+
+li {
+	color: green;
+}
+
+h4 {
+	color: purple;
+}

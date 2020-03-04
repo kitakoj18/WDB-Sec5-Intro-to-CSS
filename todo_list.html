@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo List</title>
+
+	<link rel="stylesheet" type="text/css" href="todo.css">
+
+</head>
+<body>
+
+	<h1>Todo List</h1>
+
+	<ul>
+		<!-- set class attribute to be able to set styling for a group of elements; name set to class can appear multiple times in html; first and last list element have same class and therefore can be styled together the same way
+
+		refer to todo.css to see how to style -->
+		<li class="completed">
+			<input type="checkbox" name="checkbox1">
+			Study pros and cons of algorithms
+		</li>
+		<li>
+			<input type="checkbox" name="checkbox2">
+			Work on online bootcamp
+		</li>
+		<!-- set id attribute to be able to individually set styling for this one tag/element in css; name set to id can only appear once in an html
+
+		refer to todo.css to see how to style-->
+		<li id="thirdCheck">
+			<input type="checkbox" name="checkbox3">
+			Make dinner
+		</li>
+		<li class="completed">
+			<input type="checkbox" name="checkbox3">
+			More study!
+		</li>
+	</ul>
+
+</body>
+</html>
