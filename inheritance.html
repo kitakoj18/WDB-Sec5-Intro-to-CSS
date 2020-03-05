@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inheritance and Specificity</title>
+
+	<!-- better to have in separate styling sheet but showing for testing purposes -->
+	<style type="text/css">
+		
+		/* if there was only body, would turn everything in body tag red*/
+		/* with body and ul tag, everything inside ul will inherit the style so li elements will turn orange while the rest of the body still turns red*/
+		/* The more specific styles will be applied to the element that is "closest" in inheritance */
+		body{
+			color: red;
+		}
+		ul{
+			color: orange;
+		}
+		.highlight{
+			color: yellow;
+		}
+
+	/*Rank from least specific to most specific; reference specificity calculator specificity.keagan.st*/
+
+	/*Type Selectors*/
+	li {
+
+	}
+	li a{
+
+	}
+	li + a{
+
+	}
+	/*Class, Attribute, and Pseudo-Class Selectors*/
+	.hello{
+
+	}
+	input[type="text"]{
+
+	}
+	a:hover{
+
+	}
+	/*ID Selectors*/
+	#hey{
+		
+	}
+
+	</style>
+
+</head>
+<body>
+
+	<p>Hello!</p>
+
+	<ul>
+		<li class="highlight">John</li>
+		<li>Paul</li>
+		<li>George</li>
+		<li class="highlight">Ringo</li>
+	</ul>
+
+</body>
+</html>
